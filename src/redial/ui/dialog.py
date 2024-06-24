@@ -5,7 +5,6 @@ import urwid
 from redial.hostinfo import HostInfo
 from redial.tree.node import Node
 from redial.utils import get_public_ssh_keys
-from urwid.tests.util import SelectableText
 
 
 def textbox(markup, label=""):
@@ -391,3 +390,11 @@ class DialogOverlay(urwid.Overlay):
         # TODO: implement, save with "enter"
 
         super().keypress(size, key)
+
+
+class SelectableText(urwid.Text):
+    def selectable(self):
+        return True
+
+    def keypress(self, size, key):
+        return key
