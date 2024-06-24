@@ -1,5 +1,12 @@
 # redial
 
+To install this fork using pipx:
+```bash
+pipx install git+https://github.com/pneugebala/redial.git@python-3.12
+```
+
+# Original README
+
 [![Build Status](https://img.shields.io/pypi/pyversions/redial.svg)](https://pypi.org/project/redial/)
 [![License](https://img.shields.io/github/license/taypo/redial)](LICENSE)
 [![Version](https://img.shields.io/pypi/v/redial)](https://pypi.org/project/redial/)
